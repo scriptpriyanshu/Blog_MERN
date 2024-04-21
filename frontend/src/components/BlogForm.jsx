@@ -40,7 +40,7 @@ export default function BlogForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:9090/createblog", {
+      const response = await fetch("https://blog-server-livid-three.vercel.app/createblog", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

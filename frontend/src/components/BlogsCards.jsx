@@ -7,7 +7,7 @@ const BlogsCards = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await fetch("http://localhost:9090/getblog", {
+      const response = await fetch("https://blog-server-livid-three.vercel.app/getblog", {
         method: "GET",
       });
       const data = await response.json();
