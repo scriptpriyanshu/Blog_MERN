@@ -21,6 +21,10 @@ app.use(express.json({ limit: "10mb" }));
 app.use("/", router);
 app.use("/", urouter);
 
+app.get("/vercel", (req, res) => {
+  res.send("hey vercel");
+});
+
 connectDB();
 
 const PORT = process.env.PORT;
