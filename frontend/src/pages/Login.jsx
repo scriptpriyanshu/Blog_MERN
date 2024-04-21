@@ -39,7 +39,6 @@ export default function Login() {
         const token = localStorage.setItem("token", data.token);
         navigate("/");
         toast.success(data.msg);
-        window.location.reload();
       } else {
         toast.error(data.error);
       }

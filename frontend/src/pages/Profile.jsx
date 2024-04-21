@@ -41,7 +41,6 @@ const Profile = () => {
   const handleLogout = () => {
     localStorage.removeItem("token");
     navigate("/signin");
-    window.location.reload();
   };
 
   useEffect(() => {

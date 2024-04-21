@@ -33,7 +33,7 @@ const Authors = () => {
       <div className="mt-4 ">
         {authors.map((author) => (
           <main key={author._id} className="p-5 flex justify-center">
-            <a
+            <Link
               href={`/authors/${author._id}`}
               className="px-14 flex gap-5 items-center w-full max-w-xl p-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
               // Set random background color
@@ -54,7 +54,7 @@ const Authors = () => {
                   {author.email}
                 </div>
               </div>
-            </a>
+            </Link>
           </main>
         ))}
       </div>

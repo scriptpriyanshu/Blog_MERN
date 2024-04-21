@@ -74,7 +74,6 @@ const AuthorsDetails = () => {
   const handleLogout = () => {
     localStorage.removeItem("token");
     navigate("/signin");
-    window.location.reload();
   };
 
   return (
