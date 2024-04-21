@@ -10,7 +10,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://blog-phi-eight-18.vercel.app",
     methods: "GET, HEAD, PUT, PATCH, POST, DELETE",
     credentials: true,
   })
