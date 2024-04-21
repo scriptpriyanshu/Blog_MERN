@@ -7,9 +7,12 @@ const BlogsCards = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await fetch("https://blog-server-livid-three.vercel.app/getblog", {
-        method: "GET",
-      });
+      const response = await fetch(
+        "https://blog-backend-lzjt.onrender.com/getblog",
+        {
+          method: "GET",
+        }
+      );
       const data = await response.json();
       if (response.ok) {
         setBlogs(data.blogs);

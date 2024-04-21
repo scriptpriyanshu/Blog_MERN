@@ -40,14 +40,17 @@ export default function BlogForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://blog-server-livid-three.vercel.app/createblog", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: token,
-        },
-        body: JSON.stringify(blog),
-      });
+      const response = await fetch(
+        "https://blog-backend-lzjt.onrender.com/createblog",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: token,
+          },
+          body: JSON.stringify(blog),
+        }
+      );
       const data = await response.json();
       if (response.ok) {
         setBlog({
@@ -184,10 +187,7 @@ export default function BlogForm() {
       </div>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
-        <Link
-          to='/'
-          className="text-sm font-semibold leading-6 text-gray-900"
-        >
+        <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">
           Cancel
         </Link>
         <button

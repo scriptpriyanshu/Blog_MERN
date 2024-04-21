@@ -7,11 +7,14 @@ const AuthorsDetails = () => {
   const { id } = useParams();
   const fetchAuthorDetails = async () => {
     try {
-      const response = await fetch(`https://blog-server-livid-three.vercel.app/authors/${id}`, {
-        headers: {
-          Authorization: token,
-        },
-      });
+      const response = await fetch(
+        `https://blog-backend-lzjt.onrender.com/authors/${id}`,
+        {
+          headers: {
+            Authorization: token,
+          },
+        }
+      );
       const data = await response.json();
       const author = data.author;
       console.log(author);
@@ -36,11 +39,14 @@ const AuthorsDetails = () => {
 
   const fetchProfile = async () => {
     try {
-      const response = await fetch("https://blog-server-livid-three.vercel.app/profile", {
-        headers: {
-          Authorization: token,
-        },
-      });
+      const response = await fetch(
+        "https://blog-backend-lzjt.onrender.com/profile",
+        {
+          headers: {
+            Authorization: token,
+          },
+        }
+      );
       const data = await response.json();
       const user = data.user;
       console.log(user);

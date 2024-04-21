@@ -11,7 +11,7 @@ const EditProfile = () => {
 
   const updateProfile = async () => {
     try {
-      const response = await fetch(`https://blog-server-livid-three.vercel.app/editprofile`, {
+      const response = await fetch(`https://blog-backend-lzjt.onrender.com/editprofile`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
