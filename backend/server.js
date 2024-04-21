@@ -8,8 +8,6 @@ dotenv.config();
 
 const app = express();
 
-app.options("*", cors());
-
 app.use(
   cors({
     origin: "https://*.vercel.app",
