@@ -7,7 +7,7 @@ const AuthorsDetails = () => {
   const { id } = useParams();
   const fetchAuthorDetails = async () => {
     try {
-      const response = await fetch(`http://localhost:9090/authors/${id}`, {
+      const response = await fetch(`https://blog-server-livid-three.vercel.app/authors/${id}`, {
         headers: {
           Authorization: token,
         },
@@ -36,7 +36,7 @@ const AuthorsDetails = () => {
 
   const fetchProfile = async () => {
     try {
-      const response = await fetch("http://localhost:9090/profile", {
+      const response = await fetch("https://blog-server-livid-three.vercel.app/profile", {
         headers: {
           Authorization: token,
         },

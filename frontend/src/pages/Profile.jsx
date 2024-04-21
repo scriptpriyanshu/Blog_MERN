@@ -19,7 +19,7 @@ const Profile = () => {
 
   const fetchProfile = async () => {
     try {
-      const response = await fetch("http://localhost:9090/profile", {
+      const response = await fetch("https://blog-server-livid-three.vercel.app/profile", {
         headers: {
           Authorization: token,
         },

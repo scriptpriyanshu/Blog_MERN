@@ -7,7 +7,7 @@ const Authors = () => {
   useEffect(() => {
     const fetchAuthors = async () => {
       try {
-        const response = await fetch("http://localhost:9090/authors", {
+        const response = await fetch("https://blog-server-livid-three.vercel.app/authors", {
           method: "GET",
         });
         const data = await response.json();

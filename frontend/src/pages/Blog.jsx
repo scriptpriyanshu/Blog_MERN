@@ -27,7 +27,7 @@ const Blog = () => {
   // Function to fetch blog details
   const fetchBlogDetails = async () => {
     try {
-      const response = await fetch(`http://localhost:9090/blog/${id}`, {
+      const response = await fetch(`https://blog-server-livid-three.vercel.app/blog/${id}`, {
         headers: {
           Authorization: token,
         },
@@ -54,7 +54,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await fetch("http://localhost:9090/profile", {
+        const response = await fetch("https://blog-server-livid-three.vercel.app/profile", {
           headers: {
             Authorization: token,
           },
@@ -76,7 +76,7 @@ const Blog = () => {
 
   const handleDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:9090/delete/${id}`, {
+      const response = await fetch(`https://blog-server-livid-three.vercel.app/delete/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: token,
