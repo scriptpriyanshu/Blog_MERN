@@ -10,7 +10,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://blog-phi-eight-18.vercel.app",
+    origin: "https://*.vercel.app",
     methods: "GET, HEAD, PUT, PATCH, POST, DELETE",
     credentials: true,
   })
